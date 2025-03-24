@@ -23,7 +23,7 @@
                 <img src="./assets/splashlogo2.png" loading="lazy" alt="Mighty Minis Logo" class="img-fluid">
             </div>
             <div class="col-6">
-                <form class="row gy-2 gx-3 align-items-center" action="https://formspree.io/f/mldjjdlv" method="POST" style="margin-top: 0px;" target="_blank" >
+                <form id="mmform" class="row gy-2 gx-3 align-items-center" action="https://formspree.io/f/mldjjdlv" method="POST" onsubmit="this.submit(); this.reset(); return false;" style="margin-top: 0px;" target="_blank" >
                     <div class="row mb-3">
                     <label for="fullname" class="form-label">Full Name:</label>
                     <input  type="text" class="form-control" id="fullname" name="fullname">
@@ -54,7 +54,7 @@
             </div>
         </div>
     </div>
-
+   
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
